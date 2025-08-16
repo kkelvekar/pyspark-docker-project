@@ -361,3 +361,31 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Python Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Compiled Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Spark Generated Directories
+spark-warehouse/
+metastore_db/
+.log
+*.log
+
+# IDE & Editor specific files
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
