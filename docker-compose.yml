@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  spark-app:
+    image: jupyter/pyspark-notebook
+    ports:
+      # Expose port 5678 for the Python debugger
+      - "5678:5678"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: tail -f /dev/null
