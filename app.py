@@ -11,6 +11,8 @@ def main():
         .appName("DockerPySparkTest") \
         .master("local[*]") \
         .getOrCreate()
+        
+    spark.sparkContext.setLogLevel("WARN")
 
     print("✅ Spark Session created successfully.")
 
